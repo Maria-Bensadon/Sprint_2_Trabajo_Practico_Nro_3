@@ -18,6 +18,9 @@
 import superHero from "../models/superHero.mjs";
 import IRepository from "./IRepository.mjs";
 
+
+class superHeroRepository extends IRepository {
+
     async obtenerPorId(id) {
 
     return await superHero.findById(id);
