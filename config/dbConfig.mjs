@@ -2,10 +2,11 @@
 /** 
  * Paso 1 = Configuracion de la base de datos
  * Conexión a MongoDB
- * ________________________________________________
+   ________________________________________________
  * Es la única instancia de conexión que puede ser utilizada 
- * en cualquier parte del proyecto
+   en cualquier parte del proyecto
  
+   
 */
 
 import mongoose from 'mongoose';
