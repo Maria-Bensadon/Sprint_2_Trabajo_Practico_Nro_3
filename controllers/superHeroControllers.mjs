@@ -147,7 +147,7 @@ export async function obtenerSuperheroesMayoresDe30Controller(req, res) {
 
       /* 
         la respuesta esta en funcion del status. En este caso, si no hay superheroes
-         mayores a 30, se muestra el mensaje dado
+        mayores a 30, se muestra el mensaje dado
       */
       res.status(404).send({ mensaje: `No se encontraron superhéroes mayores de 30 años` });
 

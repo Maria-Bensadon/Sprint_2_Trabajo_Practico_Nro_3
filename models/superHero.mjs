@@ -14,8 +14,8 @@
 
  * Los repositorios utilizan el esquema y el modelo para buscar
    la informacion correspondiente en MongoDB. Por ejemplo: mediante
-   el modelo se "lee" la estructura que buscar los datos para la 
-   funcion obtenerMayoresDe30() en la coleccion Grupo-05. 
+   el modelo se "lee" la estructura para saber donde y que tipo de datos 
+   para la funcion obtenerMayoresDe30() en la coleccion Grupo-05. 
   
  */
 
@@ -28,6 +28,7 @@ const superHeroSchema = new mongoose.Schema(
         nombreReal: { type: String, required: true },
 
         // consultar => edad: { type: Number, default: 0 }
+        // porque la edad es string?
         edad: { type: String, default: 'Desconocido' },
 
         // sin corchetes = 1 solo valor
