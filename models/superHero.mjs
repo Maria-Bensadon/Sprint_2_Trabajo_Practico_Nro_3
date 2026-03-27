@@ -23,24 +23,22 @@ import mongoose from "mongoose";
 
 const superHeroSchema = new mongoose.Schema(
 
-    {
-        nombreSuperHeroe: { type: String, required: true },
-        nombreReal: { type: String, required: true },
+  {
+    nombreSuperHeroe: { type: String, required: true },
+    nombreReal: { type: String, required: true },
+    edad: { type: Number, min: 0 },
+    planetaOrigen: {type: String, default: 'Desconocido'},
+    
+    // sin corchetes = 1 solo valor
+    debilidad: String,
 
-        // consultar => edad: { type: Number, default: 0 }
-        // porque la edad es string?
-        edad: { type: String, default: 'Desconocido' },
-
-        // sin corchetes = 1 solo valor
-        debilidad: String,
-
-        // con corchetes = 2+ valores
-        poderes: [String],
-        aliados: [String],
-        enemigos: [String],
-        creador: String,
-        createdAt: { type: Date, default: Date.now }
-    }
+    // con corchetes = 2+ valores
+    poderes: [String],
+    aliados: [String],
+    enemigos: [String],
+    creador: String,
+    createdAt: { type: Date, default: Date.now }
+  }
 );
 
 /**
@@ -48,6 +46,6 @@ const superHeroSchema = new mongoose.Schema(
     Esquema = superHeroSchema
     Coleccion = 'Grupo-05'
  */
-const superHero = mongoose.model('superHero', superHeroSchema, 'Grupo-05'); 
-export default superHero; 
+const superHero = mongoose.model('superHero', superHeroSchema, 'Grupo-05');
+export default superHero;
 
