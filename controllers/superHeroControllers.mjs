@@ -161,7 +161,7 @@ export async function obtenerSuperheroesMayoresDe30Controller(req, res) {
 
   catch (error) {
 
-    res.status(500).send({ mensaje: `Error al obtener superhéroes mayores de 30`, error: error.message });
+    res.status(500).send({ mensaje: `Error al obtener superhéroes mayores de 30, controlador`, error: error.message });
 
   }
 }

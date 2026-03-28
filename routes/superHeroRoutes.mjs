@@ -16,13 +16,18 @@ const router = express.Router();
 /** 
  * Endpoints
 */
-router.get('/heroes', obtenerTodosLosSuperheroesController());
+// http://localhost:3000/api/heroes
+router.get('/heroes', obtenerTodosLosSuperheroesController);
 
-router.get('/heroes/:id', obtenerSuperheroePorIdController());
+// http://localhost:3000/api/heroes/mayores-30
+router.get('/heroes/mayores-30', obtenerSuperheroesMayoresDe30Controller);
 
+// http://localhost:3000/api/heroes/:id
+router.get('/heroes/:id', obtenerSuperheroePorIdController);
+
+// http://localhost:3000/api/heroes/buscar/:atributo/:valor
 router.get('/heroes/buscar/:atributo/:valor', buscarSuperheroesPorAtributoController);
 
-router.get('/heroes/mayores-30', obtenerSuperheroesMayoresDe30Controller);
 
 export default router;
 
