@@ -1,4 +1,4 @@
-# Sprint_2_Trabajo_Practico_Nro_3
+# Sprint 2 - Trabajo Práctico Nro 3
 
 ###
 
