@@ -1,20 +1,20 @@
-## Sprint_2_Trabajo_Practico_Nro_3
+# Sprint_2_Trabajo_Practico_Nro_3
 
 ###
 
-# Resumen
+### Resumen
 En este Trabajo Práctico, desarrollamos un servidor que se conecta a la base de datos donde tenemos 2 o 3 Superheroes. 
 Usando el Modelo MVC, armamos el proyecto de forma que las diferentes actividades esten ordenadas y permitan mejorar su escalabilidad
 y mantenibilidad.
 
-# Flujo
+### Flujo
 Mediante las rutas, el cliente accede a una peticion especifica o request consultando un recurso (método GET). Este request, vuelve al backend 
 del servidor para gestionar el pedido y poder devolver una respuesta o response.
 El controlador es quien recibe la solicitud y extrae los parametros de la ruta. A continuacion, se comunica con la capa de Servicios que sirve como intermediario con la capa de Repositorio. Dentro de esta ultima capa, tenemos una interfaz (donde declamos los métodos a utilizar), y una implementacion (donde definimos la logica de dichos metodos). Para que el repositorio obtenga los datos, debe conectarse con la capa de Modelo, que mediante el esquema (schema) y el modelo (modelo) obtiene el lugar y el tipo de dato que necesita buscar en la base de datos. 
 Obtenido el o los dato/s, estos se devuelven al controlador quien utiliza funciones de la vista, que estructuran como va a ser visualizada la respuesta por el cliente o usuario. 
 
 
-# Estructura del Trabajo Práctico
+### Estructura del Trabajo Práctico
 
 TP_3/
 └── Sprint_2_Trabajo_Practico_Nro_3/
@@ -43,5 +43,5 @@ TP_3/
 
 
 ## Módulo 3 - BackEnd con node.js
-# María Gabriela Centeno Bensadón
-# Año 2026
+#### María Gabriela Centeno Bensadón
+#### Año 2026
